@@ -13,8 +13,11 @@ df_used_cars
 plt.figure(figsize = (9, 6)) #To increase the size of the plot, to make the x-axis labels readable and not overlap
 plt.bar(x = df_used_cars["Brand"],
         height = df_used_cars["Cars Listings"],
-       color = "midnight blue")# color = "rgbwymc" -Assigns each column an individual color
+       color = "midnightblue")# color = "rgbwymc" -Assigns each column an individual color
 
 #To rotate the x-axis labes at an angle
-plt.xticks(rotation = 45)
+plt.xticks(rotation = 45, fontsize = 13)
+plt.yticks(fontsize = 13)
+plt.title("Cars Listings by Brand", fontsize = 16, fontweight = "bold")
+plt.ylabel("Number of Listings", fontsize = 13 )
 plt.show()
