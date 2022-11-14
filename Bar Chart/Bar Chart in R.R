@@ -1,3 +1,12 @@
+library("ggplot2")
+
 df_used_cars <- read.csv("C:/Users/sbyeg/Downloads/bar_chart_data.csv", 
                          header = TRUE,
                          sep = ",")
+
+bar_chart <- ggplot(df_used_cars, 
+                    aes(x = Brand, 
+                        y = Cars.Listings)) +
+                        geom_bar(stat = "identity")
+
+bar_chart
