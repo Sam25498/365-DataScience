@@ -6,3 +6,9 @@ df_used_cars = pd.read_csv("C:/Users/sbyeg/Downloads/bar_chart_data.csv")
 
 #After loading the data frame to check what it contains
 df_used_cars
+
+#to translate this data in the form of a bar chart
+plt.bar(x = df_used_cars["Brand"],
+        height = df_used_cars["Cars Listings"])
+
+plt.show()
