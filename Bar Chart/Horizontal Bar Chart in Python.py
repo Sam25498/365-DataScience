@@ -46,7 +46,8 @@ plt.barh(df_used_cars["Brand"], df_used_cars["Cars Listings"], color = "midnight
 plt.xticks(rotation = 45, fontsize = 13)
 plt.yticks(fontsize = 13)
 plt.title("Cars Listings by Brand", fontsize = 16, fontweight = "bold")
-plt.ylabel("Number of Listings", fontsize = 13 )
+plt.ylabel("Brands", fontsize = 13 )
+plt.xlabel("Number of Listings", fontsize = 13 )
 plt.show()
 # To save your plot as an image
 plt.savefig("Used Cars Bar.png")
