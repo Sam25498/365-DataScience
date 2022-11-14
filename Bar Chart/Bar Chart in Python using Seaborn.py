@@ -21,3 +21,5 @@ plt.yticks(fontsize = 13)
 plt.title("Cars Listings by Brand", fontsize = 16, fontweight = "bold")
 plt.ylabel("Number of Listings", fontsize = 13 )
 plt.show()
+# To save your plot as an image
+plt.savefig("Used Cars Bar.png")
