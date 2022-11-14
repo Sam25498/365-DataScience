@@ -40,9 +40,7 @@ df_used_cars
 
 #to translate this data in the form of a bar chart
 plt.figure(figsize = (9, 6)) #To increase the size of the plot, to make the x-axis labels readable and not overlap
-plt.barh(x = df_used_cars["Cars Listings"],
-        height = df_used_cars["Brand"],
-       color = "midnightblue")# color = "rgbwymc" -Assigns each column an individual color
+plt.barh(df_used_cars["Brand"], df_used_cars["Cars Listings"], color = "midnightblue")# color = "rgbwymc" -Assigns each column an individual color
 
 #To rotate the x-axis labes at an angle
 plt.xticks(rotation = 45, fontsize = 13)
