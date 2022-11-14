@@ -1,5 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
+sns.set() #This overides the matplotib look, to take advantage of the seaborn styling
 
 #Always remember to use forward "/" slashes when specifying a path to a file.
 df_used_cars = pd.read_csv("C:/Users/sbyeg/Downloads/bar_chart_data.csv")
