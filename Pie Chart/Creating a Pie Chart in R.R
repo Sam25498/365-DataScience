@@ -17,3 +17,16 @@ percentages <- paste0(round(df_fuel_types$Number.of.Cars/sum(df_fuel_types$Numbe
 
 pie_chart <- pie_chart + geom_text(aes(label = percentages),
                                    position = position_stack(vjust = 0.5))
+
+pie_chart
+
+pie_chart <- pie_chart + labs(x = NULL,
+                              Y = NULL,
+                              fill = NULL,
+                              title = "Cars By Engine Fuel Type")
+
+pie_chart
+
+cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7" )
+pie_chart <- pie_chart + scale_fill_manual(values = cbPalette)
+
