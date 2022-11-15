@@ -17,7 +17,8 @@ plt.pie(df_fuel_engine_type['Number of Cars'],
         autopct = '%.2f%%',
         textprops = {'size' : 'x-large',
                      'fontweight' : 'bold',
-                    'rotation' : '30'})
+                    'rotation' : '30',
+                    'color' : 'w'})
        
 plt.show()
 
