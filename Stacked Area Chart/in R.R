@@ -17,5 +17,5 @@ area_chart <- ggplot(new_engine_types, aes(x = Year,
                                                    "#7e2987",
                                                    "#011638")) + theme_classic() + 
                       theme(legend.justification = c(0.01, 1), 
-                          legend.position = c(0.01,1))
+                          legend.position = c(0.01,1)) + labs(fill = "Engine Type") + ylab("Number of Cars") + ggtitle("Popularity of Engne Fuel Types (1982 - 2016)")
 area_chart
