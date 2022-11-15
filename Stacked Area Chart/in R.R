@@ -13,7 +13,7 @@ area_chart <- ggplot(new_engine_types, aes(x = Year,
                                            y = value, 
                                            fill = variable)) +
                                       geom_area()  +
-                      scale_fill_manual(values = c("011638", 
-                                                   "#7e2987", 
-                                                   "#ef2026"))
+                      scale_fill_manual(values = c("#ef2026",
+                                                   "#7e2987",
+                                                   "#011638"))
 area_chart
