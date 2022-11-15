@@ -11,4 +11,7 @@ df_fuel_engine_type
 plt.figure(figsize = (10,8))
 plt.pie(df_fuel_engine_type['Number of Cars'],
         labels = df_fuel_engine_type['Engine Fuel Type'].values,
+        autopct = '%.2f%%'
        )
+plt.show()
+
