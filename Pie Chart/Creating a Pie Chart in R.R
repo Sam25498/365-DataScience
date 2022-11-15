@@ -30,3 +30,7 @@ pie_chart
 cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7" )
 pie_chart <- pie_chart + scale_fill_manual(values = cbPalette)
 
+pie_chart <- pie_chart +theme_classic() + theme(axis.line = element_blank(),
+                                                axis.text = element_blank(),
+                                                plot.title = element_text(hjust =  0.5))
+pie_chart
