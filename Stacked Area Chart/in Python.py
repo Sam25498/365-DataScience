@@ -18,4 +18,7 @@ plt.stackplot(df_fuel_engine_types["Year"],
              edgecolor = 'none') #'edgecolor' helps control the border colors
 plt.xticks(df_fuel_engine_types["Year"], rotation = 45)
 plt.legend(labels = labels, loc = "upper left")
+plt.ylabel("Number of Cars", fontsize = 13)
+plt.title("Popularity of Engine Fuel Types (1982 -2016)", fontsize = 14, weight = "bold")
+sns.despine() #to remove the left and right  border lines specify despine(left = TRUE, right = TRUE, bottom = TRUE, top = TRUE)
 plt.show()
