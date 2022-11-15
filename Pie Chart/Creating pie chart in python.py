@@ -18,7 +18,7 @@ plt.pie(df_fuel_engine_type['Number of Cars'],
         textprops = {'size' : 'x-large',
                      'fontweight' : 'bold',
                     'rotation' : '30',
-                    'color' : 'w'})
+                    'color' : 'w'}) #The color here is to make the text readable.
        
 plt.show()
 
