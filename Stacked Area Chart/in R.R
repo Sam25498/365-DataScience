@@ -15,5 +15,7 @@ area_chart <- ggplot(new_engine_types, aes(x = Year,
                                       geom_area()  +
                       scale_fill_manual(values = c("#ef2026",
                                                    "#7e2987",
-                                                   "#011638"))
+                                                   "#011638")) + theme_classic() + 
+                      theme(legend.justification = c(0.01, 1), 
+                          legend.position = c(0.01,1))
 area_chart
