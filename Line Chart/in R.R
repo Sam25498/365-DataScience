@@ -29,3 +29,15 @@ line_chart
 
 min <- as.Date("2008-7-1")
 max <- as.Date("2008-12-31")
+
+line_chart_H2_08 <- ggplot(spx_ftse_00_10_melt,
+                                         aes(x = Date,
+                                             y = Returns,
+                                             color = Index,
+                                             group = Index)) +
+  geom_line(aes(color = Index), size = 1) +
+  scale_color_manual(values = c("navyblue", "red4")) + 
+  theme_minimal() + ggtitle("S&P vs FTSE  Returns (H2 2008)") + scale_x_date(limits = c(min, max)) + 
+  theme(legend.justification = c(0.01, 1),legend.position = c(0.01, 1) )
+
+line_chart_H2_08
