@@ -1,0 +1,31 @@
+library(ggplot2)
+library(reshape2)
+library(plyr)
+
+spx_ftse_00_10 <- read.csv("C:/Users/sbyeg/Downloads/line_chart_data.csv", 
+                           header = TRUE, 
+                           sep = ",")
+spx_ftse_00_10$Date <- as.Date(spx_ftse_00_10$Date,
+                               format = "%m/%d/%Y")
+
+spx_ftse_00_10_melt <- melt(spx_ftse_00_10,
+                            id = "Date")
+
+spx_ftse_00_10_melt
+
+spx_ftse_00_10_melt <- rename(spx_ftse_00_10_melt,
+                              c("value" = "Returns",
+                                "variable" = "Index"))
+line_chart <- ggplot(spx_ftse_00_10_melt,
+                     aes(x = Date,
+                         y = Returns,
+                         color = Index,
+                         group = Index)) +
+  geom_line(aes(color = Index), size = 1) +
+  scale_color_manual(values = c("navyblue", "red4")) + 
+  theme_minimal() + ggtitle("S&P vs FTSE  Returns (2000 - 2010)")
+
+line_chart
+
+min <- as.Date("2008-7-1")
+max <- as.Date("2008-12-31")
