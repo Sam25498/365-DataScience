@@ -14,4 +14,12 @@ scatter <- ggplot(df_real_estate,
                                     scale_color_manual(values = wes_palette(name = "Darjeeling1", n = 5)) + 
                                     theme(legend.justification = c(0.01,1),
                                           legend.position = c(0.01,1)) + 
+                             theme_classic() + 
+                                    ggtitle("Relationship between Area and Price of California Real Estate") +
+                                    ylab("Price (000's of $)") +
+                                    xlab("Area (sq. ft.)")
+
+scatter
+names(wes_palettes)
+
        
