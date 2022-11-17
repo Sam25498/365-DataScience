@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set()
-
+#Method 1: Using matplotlib.pyplot to create a scatter plot
 df_real_estate = pd.read_csv("C:/Users/sbyeg/Downloads/scatter_data.csv")
 print(df_real_estate)
 
@@ -23,7 +23,7 @@ plt.show()
 #in a scatter plot we can color code according to a third variable, in this way were are able to incorporate much more info in a scatter plot, e.g c = df_real_estate['Building Type']
 #Briefly with the pointer we are specifying the location in the memory where the first element of the array element is.
 
-#Making Use of Seaborn to create a scatter plot 
+#Method 2: Making Use of Seaborn to create a scatter plot 
 plt.figure(figsize = (12,8))
 sns.scatterplot(df_real_estate["Price"],
                 df_real_estate["Area (ft.)"],
