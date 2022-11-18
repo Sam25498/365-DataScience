@@ -29,4 +29,4 @@ ax1.tick_params(axis = "y",
                width = 2,
                labelsize = "large")
 
-ax.set_title("KD Nuggets Survey Python ")
+ax.set_title("KD Nuggets Survey Python Users (2012 - 2019)", fontsize = "14", weight = "bold")
