@@ -21,10 +21,12 @@ ax1.plot(df_kdnuggets["Year"],
        df_kdnuggets["Python Users"],
          color = "#b60000",
          marker = "D")
-ax.set_ylabel("Python Users",
+ax1.set_ylabel("Python Users",
               color = "#b60000",
               weight = "bold")
-ax.tick_params(axis = "y",
+ax1.tick_params(axis = "y",
                colors = "#b60000",
                width = 2,
                labelsize = "large")
+
+ax.set_title("KD Nuggets Survey Python ")
