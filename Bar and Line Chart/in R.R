@@ -11,3 +11,10 @@ combo <- ggplot(df_kdnuggets,
                  stat = "identity",
                  fill = "black") +
         geom_line(aes(y = Python.Users*max(Participants)),
+                  stat = "identity",
+                  color = "red",
+                  size = 2) +
+        scale_y_continuous(sec.axis = sec_axis(~./max(df_kdnuggets$Participants)*100,
+                                               name = "Python Users in %")) +
+        ggtitle("KD Nuggets Survey Python Users (2012 - 2019)")
+combo                  
